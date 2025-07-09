@@ -1,21 +1,25 @@
 #include<bits/stdc++.h>
 using namespace std ; 
 int main(){ 
-int l , r  ; 
+int l   , r  ; 
 string s ; 
 cin >> s ;
-int n = s.size() ; 
-int max_length = 0 ; 
 int m ; 
 cin >> m; 
+int n = s.size() ; 
+int max_length = 0 ; 
+
 for(char c = ' a' ; c <= 'z' ; c++)
 {
+int l  = 0  ; 
 int count = 0 ; 
 for(int r  = 0  ; r < n ; r++){  
-if(s[r] != c ) { 
+if(s[r] != c ) {
+ 
     count++ ; 
 }
-while(count > m && l < r ) { 
+while(count > m && l <= r ) {
+ 
         if(s[l] != c){ 
         count--; 
 

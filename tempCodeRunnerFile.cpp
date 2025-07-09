@@ -1,17 +1,40 @@
 #include<bits/stdc++.h>
-using namespace std ;
-int main () { 
-   int n , r;  
-   cin >>  n >>  r ; 
-   long long s =(1LL  << n ) -r + 1 ; 
-   int m = 0; 
-  long long temp  = s; 
-  while(temp >  1)   { 
-    temp  >>= 1 ; 
-    m++ ;  
-  }
-  if( s== 0 ) m =  - 1; 
-  int anwer  = min(n, m+ 1 ) ; 
-  cout << anwer << endl ; 
-  return 0 ; 
+using namespace std ; 
+int main(){ 
+    system("cls"); 
+int l , r  ; 
+string s ; 
+cin >> s ;
+int n = s.size() ; 
+int max_length = 0 ; 
+int m ; 
+cin >> m; 
+for(char c = ' a' ; c <= 'z' ; c++)
+{
+int count = 0 ; 
+for(int r  = 0  ; r < n ; r++){  
+if(s[r] != c ) { 
+    count++ ; 
 }
+while(count > m && l < r ) { 
+        if(s[l] != c){ 
+        count--; 
+
+        }
+        l++ ; 
+}
+if( l <= r ) { 
+int countc = (r - l + 1) - count;  
+max_length = max(max_length,countc);  
+}
+}
+} 
+
+cout << max_length << endl ;
+return 0 ;
+}
+
+
+
+
+
