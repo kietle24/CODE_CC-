@@ -58,7 +58,7 @@ int main () {
     head->next->next->next = new ListNode(1);
 
     bool result = sol.isPalindrome(head); // bool result = sol.isPalindrome(head) ; 
-    cout << (result ? "The linked list is a palindrome." : "The linked list is not a palindrome.") << endl;
+    cout << (result ? "TRUE" : "The linked list is not a palindrome.") << endl;
 
     // Clean up memory
     while (head != NULL) {
