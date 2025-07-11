@@ -16,9 +16,6 @@ class Solution {
             fast = fast->next->next  ;
             slow = slow->next ; 
         }
-        if(fast != NULL ) { 
-            slow = slow->next ;
-        }
         slow = reverselist(slow) ; 
         fast = head ; 
         while(slow != NULL){  
@@ -46,7 +43,7 @@ int main () {
     Solution sol;
     ListNode* head = new ListNode(1);
     head->next = new ListNode(2);
-    head->next->next = new ListNode(3);
+    head->next->next = new ListNode(2);
     head->next->next->next = new ListNode(1);
     bool result = sol.isPalindrome(head); // bool result = sol.isPalindrome(head) ; 
     cout << (result ? "TRUE" : "NO") << endl;
