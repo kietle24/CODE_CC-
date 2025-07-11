@@ -7,25 +7,14 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 }; 
-
 class Solution {
-  
-public:
-  
- 
-
-   
-    bool isPalindrome(ListNode* head) {
-        
-        
+  public:
+  bool isPalindrome(ListNode* head) {
         ListNode* slow = head ; 
         ListNode* fast = head ; 
         while(fast != NULL && fast->next != NULL) {  
             fast = fast->next->next  ;
             slow = slow->next ; 
-        }
-        if(fast != NULL ) { 
-            slow = slow->next ;
         }
         slow = reverselist(slow) ; 
         fast = head ; 
@@ -56,16 +45,7 @@ int main () {
     head->next = new ListNode(2);
     head->next->next = new ListNode(2);
     head->next->next->next = new ListNode(1);
-
     bool result = sol.isPalindrome(head); // bool result = sol.isPalindrome(head) ; 
-    cout << (result ? "The linked list is a palindrome." : "The linked list is not a palindrome.") << endl;
-
-    // Clean up memory
-    while (head != NULL) {
-        ListNode* temp = head;
-        head = head->next;
-        delete temp;
-    }
-
-    return 0;
+    cout << (result ? "TRUE" : "NO") << endl;
+return 0;
 }
