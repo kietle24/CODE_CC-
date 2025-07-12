@@ -17,8 +17,8 @@ public:
                 returnnode->next = l1;
                 l1 = l1->next;
             } else {
-                returnnode->next = l2; //nguoc lai thi trar vao l2 
-                l2 = l2->next;
+                returnnode->next = l2; nguoc lai thi trar vao l2 
+                l2 = l2->next;A
             }
             returnnode = returnnode->next; // tiep tuc tien toi node vua them
         }
@@ -28,24 +28,7 @@ public:
         return head->next;
     }
 };
-void in(ListNode *node) {
-    while(node != NULL ) {  
-        cout << node->val << " " ; 
-        node = node->next ; 
-
-    }  
-    cout << endl; 
-
-}
 int main () { 
-ListNode* l1 = new ListNode(1) ; 
-l1->next = new ListNode(3) ; 
-l1->next->next = new ListNode(5) ; 
-ListNode* l2 = new ListNode(2); 
-l2->next =new ListNode(4) ; 
-l2->next->next = new ListNode(6) ; 
-Solution sol ;
-ListNode* kq = sol.mergeTwoLists(l1, l2 ) ; 
-in(kq) ;  
-return 0; 
+   
+
 }

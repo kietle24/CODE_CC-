@@ -11,8 +11,6 @@ Tính chiều dài của danh sách (len)
 Tìm node cần xóa bằng công thức: node thứ (len - n + 1) từ đầu
 
 Xóa node đó bằng cách cập nhật con trỏ next của node trước nó.
-
-
 */
 class Solution {
 public:
