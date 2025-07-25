@@ -13,7 +13,7 @@ if(head->next != NULL)
 cout <<"->"; 
 head= head->next ; 
 }
-cout << endl ; 
+
 }
 class Solution{ 
      public: 
