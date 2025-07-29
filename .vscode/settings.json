@@ -99,14 +99,14 @@
     "text_encoding": "cpp",
     "variant": "cpp"
   },
-  "C_Cpp_Runner.cCompilerPath": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
-"C_Cpp_Runner.cppCompilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",  "C_Cpp_Runner.debuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe",
-  
-  "C_Cpp_Runner.cStandard": "c11",  
+  "C_Cpp_Runner.cCompilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
+  "C_Cpp_Runner.cppCompilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+  "C_Cpp_Runner.debuggerPath": "C:/msys64/ucrt64/bin/gdb.exe",
+  "C_Cpp_Runner.cStandard": "c11",
   "C_Cpp_Runner.cppStandard": "c++20",
-  "C_Cpp_Runner.compilerArgs": [                         
-  "-std=c++20"
-],
+  "C_Cpp_Runner.compilerArgs": [
+    "-std=c++20"
+  ],
   "C_Cpp_Runner.msvcBatchPath": "",
   "C_Cpp_Runner.useMsvc": false,
   "C_Cpp_Runner.warnings": [
@@ -138,7 +138,6 @@
   ],
   "C_Cpp_Runner.enableWarnings": true,
   "C_Cpp_Runner.warningsAsError": false,
- 
   "C_Cpp_Runner.linkerArgs": [],
   "C_Cpp_Runner.includePaths": [],
   "C_Cpp_Runner.includeSearch": [
@@ -161,8 +160,5 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "cSpell.words": [
     "chẵn"
-  ],
-  
-
-  
+  ]
 }
